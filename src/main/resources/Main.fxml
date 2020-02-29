@@ -3,7 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ciphers.TestController">
+<!--root is an id of our layout which is anchorPane and in main application class we can refer to it by definition veriable with equal to its id.-->
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <TextArea fx:id="textArea" layoutX="85.0" layoutY="151.0" prefHeight="200.0" prefWidth="431.0" />
       <Button contentDisplay="BOTTOM" layoutX="85.0" layoutY="70.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="48.0" prefWidth="152.0" text="Uncoding" textFill="#c61212" />
