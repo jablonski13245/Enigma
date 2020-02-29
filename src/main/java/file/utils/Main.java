@@ -7,16 +7,21 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    private static Stage mainStage;
     String resourcePath = "/Main.fxml";
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage primaryStage) throws Exception {
+        mainStage = primaryStage;
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource(resourcePath));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-        stage.setTitle("Enigma");
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setTitle("Enigma");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+    public static Stage getMainStage(){
+        return mainStage;
     }
 
 }
